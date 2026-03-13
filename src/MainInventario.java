@@ -31,7 +31,7 @@ public class MainInventario {
         inventario.listarProductos();
 
         System.out.println("Actualizado el stock de un producto que no existe (RAM) a 7. No debería actualizarm pero tampoco dar error");
-        //inventario.actualizarStock("RAM", 7);
+        Producto p6 = new Producto("Teclado", 2000000.0, 1, 0.5);
         inventario.listarProductos();
 
         // Manipulamos datos “erróneos” para el valor total
