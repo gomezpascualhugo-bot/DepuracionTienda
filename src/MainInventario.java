@@ -43,12 +43,11 @@ public class MainInventario {
         System.out.println("Valor total de stock: " + valorTotal);
 
         // Eliminación para ver comportamiento con huecos null
-        inventario.eliminarProducto("Raton");
         inventario.listarProductos();
 
         // intentando actualizar el stock del producto eliminado
         System.out.println("Intentando actualizar el stock del producto eliminado... ");
-       // inventario.actualizarStock("Raton", 5);
+        inventario.actualizarStock("Raton", 5);
 
 
         double valorTotal2 = inventario.calcularValorTotalStock();
