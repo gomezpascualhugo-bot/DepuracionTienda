@@ -5,9 +5,9 @@ public class MainInventario {
         InventarioTienda inventario = new InventarioTienda(5);
 
         // Datos iniciales
-        Producto p1 = new Producto("Teclado", 20.0, 10, 2.0);
+        Producto p1 = new Producto("Teclado", 20.0, 10, 10.0);
         Producto p2 = new Producto("Raton", 15.0, 5, 0.0);
-        Producto p3 = new Producto("Monitor", 150.0, 2, 30.0);
+        Producto p3 = new Producto("Monitor", 150.0, 2, 20.0);
 
         inventario.insertarProducto(p1);
         inventario.insertarProducto(p2);
@@ -31,7 +31,7 @@ public class MainInventario {
         inventario.listarProductos();
 
         System.out.println("Actualizado el stock de un producto que no existe (RAM) a 7. No debería actualizarm pero tampoco dar error");
-        Producto p6 = new Producto("Teclado", 2000000.0, 1, 0.5);
+        inventario.actualizarStock("RAM", 7);
         inventario.listarProductos();
 
         // Manipulamos datos “erróneos” para el valor total
@@ -43,6 +43,7 @@ public class MainInventario {
         System.out.println("Valor total de stock: " + valorTotal);
 
         // Eliminación para ver comportamiento con huecos null
+        inventario.eliminarProducto("Raton");
         inventario.listarProductos();
 
         // intentando actualizar el stock del producto eliminado
@@ -54,3 +55,4 @@ public class MainInventario {
         System.out.println("Valor total de stock tras eliminar ratón: " + valorTotal2);
     }
 }
+
