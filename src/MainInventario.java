@@ -5,9 +5,9 @@ public class MainInventario {
         InventarioTienda inventario = new InventarioTienda(5);
 
         // Datos iniciales
-        Producto p1 = new Producto("Teclado", 20.0, 10, 10.0);
+        Producto p1 = new Producto("Teclado", 20.0, 10, 2.0);
         Producto p2 = new Producto("Raton", 15.0, 5, 0.0);
-        Producto p3 = new Producto("Monitor", 150.0, 2, 20.0);
+        Producto p3 = new Producto("Monitor", 150.0, 2, 30.0);
 
         inventario.insertarProducto(p1);
         inventario.insertarProducto(p2);
