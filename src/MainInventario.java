@@ -36,7 +36,6 @@ public class MainInventario {
 
         // Manipulamos datos “erróneos” para el valor total
         // Introducimos stock negativo a propósito
-        p2.setStock(-3);
 
 
         double valorTotal = inventario.calcularValorTotalStock();
